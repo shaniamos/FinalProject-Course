@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "140147808190",
+    "project_id": "myprocedure-8e91e",
+    "storage_bucket": "myprocedure-8e91e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140147808190:android:58153930226e560a160bef",
+        "android_client_info": {
+          "package_name": "com.example.myprocedure"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140147808190-stmoasbmjagoe1lo0kr9qtp83qgvrnef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCYz4eDIULL8dZB1h_TTnaJUWYWdddnnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140147808190-stmoasbmjagoe1lo0kr9qtp83qgvrnef.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

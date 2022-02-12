@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_margin="20dp"
+    android:padding="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/procedure_description_link"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/app_logo" />
+    <TextView
+        android:id="@+id/touch_the_image_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on image to watch full explanation video"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/procedure_description_link"/>
+
+    <TextView
+        android:id="@+id/procedure_description_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/touch_the_image_message"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Procedure Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/procedure_full_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/procedure_description_name"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="Procedure full description"
+
+        />
+
+
+</RelativeLayout>

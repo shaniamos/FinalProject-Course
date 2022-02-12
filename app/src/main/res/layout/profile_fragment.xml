@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relative_layout_profile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/picture_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:background="@color/white">
+        <ImageButton
+            android:id="@+id/profile_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/app_logo"
+            android:background="@android:color/transparent"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_profile_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="230dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_baseline_edit_24" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/picture_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7dp"
+        android:text="Edit your personal details"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/details_edit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/picture_edit"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/first_name_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:paddingTop="1dp"
+            android:text="First name" />
+
+        <EditText
+            android:id="@+id/edit_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:inputType="textPersonName"
+            android:text="First name" />
+
+        <TextView
+            android:id="@+id/last_name_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_first_name"
+            android:layout_marginStart="20dp"
+            android:paddingTop="1dp"
+            android:text="Last name" />
+
+        <EditText
+            android:id="@+id/edit_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_first_name"
+            android:layout_margin="20dp"
+            android:inputType="textPersonName"
+            android:text="Last name" />
+        <TextView
+            android:id="@+id/password_subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_last_name"
+            android:layout_marginStart="20dp"
+            android:paddingTop="1dp"
+            android:text="Password"/>
+
+        <EditText
+            android:id="@+id/edit_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_last_name"
+            android:layout_margin="20dp"
+            android:inputType="numberPassword"
+            android:text="Password" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_personal_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edit_password"
+            android:layout_marginStart="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_round_done_all_24" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_margin="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/contact_us_logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/letter" />
+    <TextView
+        android:id="@+id/first_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Get in touch"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/contact_us_logo"/>
+
+    <TextView
+        android:id="@+id/second_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_sentence"
+        android:layout_centerHorizontal="true"
+        android:paddingHorizontal="20dp"
+        android:textAlignment="center"
+        android:textSize="15sp"
+        android:text="Want to find out how our clinic can solve problems specific to your face and your goals?" />
+    <TextView
+        android:id="@+id/third_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Let's talk, We'd love to hear from you!"
+        android:layout_below="@id/second_sentence"
+        android:textSize="15sp"
+
+        android:paddingTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/sixth_sentence"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/third_sentence"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="15dp"
+        android:textSize="15sp"
+
+        android:text="Here's how you can reach us" />
+
+    <RelativeLayout
+        android:id="@+id/two_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/sixth_sentence">
+
+        <ImageButton
+            android:id="@+id/call_us_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:paddingEnd="60dp"
+            android:src="@drawable/ic_round_local_phone_24" />
+
+        <ImageButton
+            android:id="@+id/email_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/call_us_button"
+            android:background="@android:color/transparent"
+            android:paddingStart="60dp"
+            android:src="@drawable/ic_outline_email_24" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_below="@+id/two_buttons" />
+
+
+
+
+
+
+</RelativeLayout>
